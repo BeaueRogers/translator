@@ -1,5 +1,5 @@
-var Translation = (function(){
-  var lexicon = {
+Translation = (function(){
+  lexicon = {
       January:"Januar",
       February:"Februar",
       March:"März",
@@ -13,7 +13,6 @@ var Translation = (function(){
       November:"November",
       December:"Dezember"
   };
-
   return {
     translateToGerman: function (input) {
       input = $("#text-area").val().split(' ');
@@ -23,4 +22,4 @@ var Translation = (function(){
       });
     }
   }
-});
+}());
