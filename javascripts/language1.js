@@ -32,10 +32,7 @@ The team should create an extra JavaScript file that handles interacting with th
 
 
 // })
-
 var input = $("#text-area").val()
-
-
 var Translation = (function(){
   var lexicon = {
     January: "Janerio",
@@ -53,9 +50,10 @@ var Translation = (function(){
 
   return {
     translateToPortugese: function (input) {
-      var input = $("#text-area").val().split(' ');
+      input = $("#text-area").val().split(' ');
       input.forEach(function(word) {
-        lexicon[word]
+        $(".output").append("<h2>" + lexicon[word] + "<h2>");
+        console.log(lexicon[word])
       });
     }
   }
